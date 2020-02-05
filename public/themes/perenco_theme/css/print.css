@@ -1,0 +1,43 @@
+@media print{
+  #toolbar-administration *,
+  #block-perenco-theme-main-menu * ,
+  [data-contextual-id] *,
+  #block-perencoheadertop *,
+  #block-perencocontentheader section,
+  #block-perencocontentheader .perenco-pageheroheaderimg,
+  #block-perenco-theme-footer *,
+  #block-perenco-theme-breadcrumbs *,
+  header.site-header *,
+  footer.site-footer *,
+  #block-perencofixedfooter *,
+  .right-bar{
+    display: none !important;
+  }
+
+  .print-only{
+    display: block !important;
+  }
+
+  body{
+    padding-top: 0px;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  .row.wrapper{
+    display: block !important;
+  }
+
+  .reference-item{
+    opacity: 1 !important;
+  }
+
+  @supports (-moz-appearance:meterbar) {
+    * {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+  }
+}
