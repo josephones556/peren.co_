@@ -58,6 +58,8 @@
     <link rel="stylesheet" href="{{ asset('themes/perenco_theme/css/print.css') }}" media="all" />
     <link rel="stylesheet" href="{{ asset('themes/perenco_theme/css/custom.css') }}" media="all" />
 
+    @stack('style')
+
     <!--[if lte IE 8]>
         <script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
     <![endif]-->
@@ -301,8 +303,9 @@
                           <a href="careers" data-id="mega-group" data-nid="7">CAREERS</a>
                                     </li>
                                                               <li class="menu-item ">
-                          <a href="perencostories" data-id="mega-group" data-nid="8">PERENCOSTORIES</a>
+                          <a href="/contact" data-id="mega-group" data-nid="8">CONTACT US</a>
                                     </li>
+
                             </ul>
                     <div class="clear"></div>
                     <div class="search-bar d-inline-block d-sm-inline-block d-md-none show-for-mobile">
@@ -419,18 +422,15 @@
                         <p>Perenco is the first independent oil and gas company in Europe. Our teams bring together over 6,000 collaborators who operate both onshore and offshore within 14 countries throughout the world from Northern Europe to Africa, South America and South-East Asia.</p>
                         <div class="footer-menu">
                         <ul>
-                                        <li><a href="plan-du-site">SITEMAP</a></li>
-                                        <li><a href="legal-notice">LEGAL NOTICE</a></li>
-                                        <li><a href="credits">CREDITS</a></li>
-                                        <li><a href="contact">Contact</a></li>
+                                        <li><a href="/contact">Contact</a></li>
                                     </ul>
                         </div>
                     </div>
                     <div class="col-md-6 footer-right">
                         <h3>JOIN US ON</h3>
-                        <a href="https://www.linkedin.com/company/perenco/" target="_blank"><img src="{{ asset('themes/perenco_theme/images/linkedlogo.png') }}" alt="Perenco Linkedin" class="linked-in-logo linked-in-gtm"/></a>
+                        <a href="#" target="_blank"><img src="{{ asset('themes/perenco_theme/images/linkedlogo.png') }}" alt="Perenco Linkedin" class="linked-in-logo linked-in-gtm"/></a>
                         <p>We work with passion, responsibility, courage, integrity, humility, confidence and optimism: the seven values that drive Perenco’s collaborators. Set off for the international adventure with Perenco and come and share our vision of the future. We need your expertise and talents, and we will know how to value and enhance them. </p>
-                        <a href="https://www.linkedin.com/company/perenco/" class="btn-linkedin linked-in-gtm" target="_blank">Connect to Linkedin</a>
+                        <a href="#" class="btn-linkedin linked-in-gtm" target="_blank">Connect to Linkedin</a>
                     </div>
                     </div>
                 </div>
@@ -438,6 +438,7 @@
         </nav>
 
         <script src="{{ asset('sites/default/files/js/js_l8toSsRg0NEC7cIwdf8VZ3Ub30ZCjXw_5ZZ50COdINs.js') }}"></script>
+        @stack('javascript')
         
     </body>
 

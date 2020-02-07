@@ -70,6 +70,23 @@ Route::get('/careers', function () { return view('careers'); });
 
 Route::get('/perencostories', function () { return view('perencostories'); });
 
+Route::get('/contact', function () { return view('contact'); });
+
+Route::post('/contact-us', function () { 
+
+    $data = [
+        'name' => request()->name,
+        'email' => request()->email,
+        'subject' => request()->subject,
+        'message' => str_replace('\n', '<br />', request()->message)
+    ];
+
+    \Mail::to(env('MAIL_FROM_ADDRESS'))->send(new \App\Mail\ContactMail($data));
+
+    return "Email Sent!! We will get back to you in a jiffy.";
+
+});
+
 
 
 
