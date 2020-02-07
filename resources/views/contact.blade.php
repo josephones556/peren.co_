@@ -124,7 +124,10 @@ Contant Us
 
             http.onreadystatechange = function(){
                 if(http.readyState == 4 && http.status == 200){
+                    
                     alert(http.responseText)
+
+                    window.location.reload()
                     //document.getElementById("response").innerHTML = http.responseText;
                 }
             }
