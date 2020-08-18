@@ -95,10 +95,6 @@
                                 </div>
                             </form>
                         </div>
-
-                        <div class="laguage-selection">
-                            <div id="google_translate_element"></div>
-                        </div>
                     </div>
                 </section>
             </div>
@@ -108,9 +104,9 @@
                     <div class="container">
                         <div class="logo-section">
                             <a href="index"><img src="{{ asset('themes/perenco_theme/images/parenco-logo.svg') }}" width="140" height="45.76" alt="Perenco, compagnie pétrolière et gazière"/></a>
-                            <div class="laguage-selection show-for-mobile">
-                                <div id="google_translate_element"></div>
-                            </div>
+                            {{-- <div class="laguage-selection show-for-mobile">
+                                <div id="google_translate_element_2"></div>
+                            </div> --}}
                         </div>
 
                         <button type="button" class="navbar-toggle x collapsed d-sm-block d-md-none">
@@ -430,7 +426,7 @@
                         <h3>JOIN US ON</h3>
                         <a href="#" target="_blank"><img src="{{ asset('themes/perenco_theme/images/linkedlogo.png') }}" alt="Perenco Linkedin" class="linked-in-logo linked-in-gtm"/></a>
                         <p>We work with passion, responsibility, courage, integrity, humility, confidence and optimism: the seven values that drive Perenco’s collaborators. Set off for the international adventure with Perenco and come and share our vision of the future. We need your expertise and talents, and we will know how to value and enhance them. </p>
-                        <a href="#" class="btn-linkedin linked-in-gtm" target="_blank">Connect to Linkedin</a>
+                        <div id="google_translate_element"></div>
                     </div>
                     </div>
                 </div>
